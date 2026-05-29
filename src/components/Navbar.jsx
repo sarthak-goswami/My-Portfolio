@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 const Navbar = () => {
   return (
-    <div className="fixed border-b  border-white/10 flex w-full inset-0 backdrop-blur-xs justify-between h-8 bg-black/5 opacity-90">
+    <div className="fixed border-b  border-white/10 flex w-full inset-0 backdrop-blur-xs justify-between h-8 bg-white/10 opacity-90">
       <h1>Sarthak</h1>
       <div className="flex w-1/2 justify-evenly">
         <motion.div
@@ -20,7 +20,9 @@ const Navbar = () => {
             stiffness: 300,
           }}
         >
-          <Link className="text-pink-400" to="/">Home</Link>
+          <Link className="text-blue-800" to="/">
+            Home
+          </Link>
         </motion.div>
         <motion.div
           className="px-2 rounded-md"
@@ -35,7 +37,9 @@ const Navbar = () => {
             stiffness: 300,
           }}
         >
-          <Link className="text-pink-400" to="/about">About</Link>
+          <Link className="text-blue-800" to="/about">
+            About
+          </Link>
         </motion.div>
         <motion.div
           className="px-2 rounded-md"
@@ -50,7 +54,9 @@ const Navbar = () => {
             stiffness: 300,
           }}
         >
-          <Link className="text-pink-400" to="/contact">Contact Me</Link>
+          <Link className="text-blue-800" to="/contact">
+            Contact Me
+          </Link>
         </motion.div>
       </div>
     </div>

@@ -13,7 +13,7 @@ function App() {
   const { scrollYProgress } = useScroll();
   return (
     <BrowserRouter>
-      <motion.div className=" bg-linear-to-r from-white to-blue-300 w-full min-h-screen text--black font-sans">
+      <motion.div className=" bg-linear-to-r from-blue-200 to-blue-300 w-full min-h-screen text--black font-sans">
         <motion.div
           id="scroll-indicator"
           className="bg-linear-to-r/shorter from-red-500 to-yellow-400"
@@ -33,16 +33,18 @@ function App() {
 
         <Navbar />
         <div className="pt-10">
-          <div className="fixed inset-0 z-0 overflow-hidden">
+          <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
             <FloatingParticle x="10%" y="20%" size={300} />
+            <FloatingParticle x="0%" y="70%" size={300} />
             <FloatingParticle x="70%" y="50%" size={250} />
-            <FloatingParticle x="40%" y="80%" size={200} />
+            <FloatingParticle x="50%" y="80%" size={200} />
           </div>
+          <div className="z-10">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-          </Routes>
+          </Routes></div>
         </div>
       </motion.div>
     </BrowserRouter>

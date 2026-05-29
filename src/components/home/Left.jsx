@@ -10,7 +10,7 @@ const Left = () => {
   return (
     <motion.div
       whileHover={{}}
-      className="mx-5 fixed bg-pink-400/5 border rounded-2xl border-pink-400 flex flex-col py-3 px-6 gap-2 align-middle items-center justify-evenly shadow-md shadow-pink-500/4"
+      className="mx-5 fixed bg-white/10 border border-white/50 rounded-2xl flex flex-col py-3 px-6 gap-2 align-middle items-center justify-evenly shadow-md shadow-purple-500/4"
     >
       <img width="100px" height="100px" src={photo} alt="" />
       <h1 className="text-2xl text-black">Sarthak Goswami</h1>
@@ -20,7 +20,7 @@ const Left = () => {
       <div className="mt-2 flex flex-col gap-2 text-xs text-black/80">
         <motion.div
           whileHover={{
-            color: "white",
+            color: "black",
             scale: 1.02,
             border: "white 1px solid",
           }}
@@ -34,7 +34,7 @@ const Left = () => {
         </motion.div>
         <motion.div
           whileHover={{
-            color: "white",
+            color: "black",
             scale: 1.02,
             border: "white 1px solid",
           }}
@@ -48,7 +48,7 @@ const Left = () => {
         </motion.div>
         <motion.div
           whileHover={{
-            color: "white",
+            color: "black",
             scale: 1.02,
             border: "white 1px solid",
           }}
@@ -62,7 +62,7 @@ const Left = () => {
         </motion.div>
         <motion.div
           whileHover={{
-            color: "white",
+            color: "black",
             scale: 1.02,
             border: "white 1px solid",
           }}
